@@ -1,9 +1,6 @@
 # eval-word-vectors
-Manaal Faruqui, mfaruqui@cs.cmu.edu
 
-Easy-to-use scripts for evaluating word vectors on a variety of tasks.
-These are the scripts that run behind the online tool on ```http://www.wordvectors.org/```.
-I will be adding more evaluation scripts here over the course of time.
+This script is almost exactly the same as the one at https://github.com/mfaruqui/eval-word-vectors, but has its normalization done differently, as per the description in the thesis.
 
 ### Requirements
 1. Python 2.7 (+numpy package)
@@ -33,12 +30,22 @@ Each vector file should have one word vector per line as follows (space delimite
 Please make sure to cite the papers corresponding to the word similarity dataset that you are using. This
 list of citation can be found at ```http://www.wordvectors.org/```.
 
-Please cite the following paper if you use this tool:
+Please cite the following papers if you use this tool:
 ```
 @InProceedings{faruqui-2014:SystemDemo,
   author    = {Faruqui, Manaal  and  Dyer, Chris},
   title     = {Community Evaluation and Exchange of Word Vectors at wordvectors.org},
   booktitle = {Proceedings of ACL: System Demonstrations},
   year      = {2014},
+}
+```
+
+```
+@MastersThesis{kjetilbk:enc3:2017,
+  author = {Kjetil Bugge Kristoffersen},
+  title  = {Common Crawled Web Corpora},
+  school = {University of Oslo},
+  address = {Oslo, Norway},
+  year = {2017}
 }
 ```
